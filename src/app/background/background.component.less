@@ -1,0 +1,24 @@
+// out: false
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 500ms;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+video {
+    transform: scale(1.2);
+    transform-origin: top;
+}

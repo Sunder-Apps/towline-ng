@@ -1,0 +1,145 @@
+// out: false
+
+// GLOBAL THEME - Doesn't change on theme swap
+:root {
+    --facebook-1: #3b5998;
+    --twitter-1: #00aced;
+    --youtube-1: #F00;
+    --itunes-1: #DDD;
+    --spotify-1: #84bd00;
+    --amazon-1: #F90;
+    --amazon-2: #146eb4;
+    --napster-1: #2ca6de;
+    --napster-2: #fdb813;
+    --google-play-1: #f55a34;
+    --google-play-2: #ffd119;
+    --google-play-3: #ff8c00;
+    --instagram-1: #8a3ab9;
+    --instagram-2: #4c68d7;
+    --instagram-3: #cd486b;
+    --instagram-4: #fbad50;
+    --instagram-5: #fccc63;
+    --instagram-6: #bc2a8d;
+    --instagram-7: #e95950;
+
+    --app-width: 1080px;
+    --app-padding: 40px;
+    --app-sidebar: 130px;
+    --app-sidebar-padding: 10px;
+}
+
+// THEME 0 - DEVICE_PREFERENCE: Dark Mode
+:root {
+    --fore: #bbb;
+    --back: #222;
+    --black: #000;
+    --white: #fff;
+    --gray: #C1C1C1;
+    --light-gray: #F2F2F2;
+    --trans: rgba(0, 0, 0, 0.8);
+    --featured: rgba(255, 225, 81, 0.59);
+    --input: #222;
+    --input-back: #fff;
+    --action: #480169;
+    --action-focus: #480169;
+    --action-active: #480169;
+    --accept: #208a20;
+    --accept-focus: #208a20;
+    --accept-active: #208a20;
+    --reject: darkslateblue;
+    --reject-focus: darkslateblue;
+    --reject-active: darkslateblue;
+    --danger: #ff4d4d;
+    --danger-focus: #ff4d4d;
+    --danger-active: #ff4d4d;
+    --warning: #ffaa22;
+    --warning-focus: #ffaa22;
+    --warning-active: #ffaa22;
+    --info: steelblue;
+    --info-focus: steelblue;
+    --info-active: steelblue;
+}
+/*
+// THEME 0 - DEVICE_PREFERENCE: Light Mode
+@media (prefers-color-scheme: light) {
+    :root {
+        --fore: #222;
+        --back: #ddd;
+        --accept: #2b506e;
+        --reject: #2e2759;
+        --info: steelblue;
+        --danger: #b30000;
+    }
+}*/
+
+#theme {
+    // THEME 1 - DARK
+    &.dark {
+        --fore: #ddd;
+        --back: #222;
+        --action: #4682b4;
+        --action-focus: #4682b4;
+        --action-active: #4682b4;
+        --accept: #208a20;
+        --accept-focus: #208a20;
+        --accept-active: #208a20;
+        --reject: darkslateblue;
+        --reject-focus: darkslateblue;
+        --reject-active: darkslateblue;
+        --danger: #ff4d4d;
+        --danger-focus: #ff4d4d;
+        --danger-active: #ff4d4d;
+        --warning: #ffaa22;
+        --warning-focus: #ffaa22;
+        --warning-active: #ffaa22;
+        --info: steelblue;
+        --info-focus: steelblue;
+        --info-active: steelblue;
+    }
+
+    // THEME 2 - LIGHT
+    &.light {
+        --fore: #222;
+        --back: #ddd;
+        --accept: #2b506e;
+        --reject: #2e2759;
+        --info: steelblue;
+        --danger: #b30000;
+    }
+}
+
+// Theme Classes
+.accept {
+    --fore: var(--accept);
+    --action: var(--accept);
+    --action-focus: var(--accept-focus);
+    --action-active: var(--accept-active);
+}
+
+.reject {
+    --fore: var(--reject);
+    --action: var(--reject);
+    --action-focus: var(--reject-focus);
+    --action-active: var(--reject-active);
+}
+
+.danger {
+    --fore: var(--danger);
+    --action: var(--danger);
+    --action-focus: var(--danger-focus);
+    --action-active: var(--danger-active);
+}
+
+.warning {
+    --fore: var(--warning);
+    --action: var(--warning);
+    --action-focus: var(--warning-focus);
+    --action-active: var(--warning-active);
+}
+
+.info {
+    --fore: var(--info);
+    --action: var(--info);
+    --action-focus: var(--info-focus);
+    --action-active: var(--info-active);
+}
